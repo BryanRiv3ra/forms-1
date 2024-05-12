@@ -63,6 +63,26 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _6f84657f_3edb_4a03_b27c_a3e39fd090eb {
+            get {
+                object obj = ResourceManager.GetObject("6f84657f-3edb-4a03-b27c-a3e39fd090eb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap d45121855efb5fa759a01b8def4ebe31 {
+            get {
+                object obj = ResourceManager.GetObject("d45121855efb5fa759a01b8def4ebe31", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap descargar {
             get {
                 object obj = ResourceManager.GetObject("descargar", resourceCulture);
@@ -76,6 +96,16 @@ namespace WindowsFormsApp1.Properties {
         internal static System.Drawing.Bitmap descargar__4_ {
             get {
                 object obj = ResourceManager.GetObject("descargar (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap descargar__4_1 {
+            get {
+                object obj = ResourceManager.GetObject("descargar (4)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

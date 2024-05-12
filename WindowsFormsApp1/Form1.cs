@@ -42,7 +42,8 @@ namespace WindowsFormsApp1
         {
 
         }
-
+        private int intentosFallidos = 0;
+        private const int maximoIntentos = 3;
         private void button1_Click(object sender, EventArgs e)
         {
             LblTitulo.Text = "Bienvenido a mi habitacion terciopelo";
@@ -52,15 +53,31 @@ namespace WindowsFormsApp1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (textBoxPWD.Equals("admin")&&textBoxUSR.Text.Equals("admin"))
+            if (textBoxPWD.Text.ToUpper().Equals("ADMIN") && textBoxUSR.Text.ToUpper().Equals("ADMIN"))
             {
-                FrmIngreso forma = new FrmIngreso();
-                forma.Show();
+                FrmIngreso froma = new FrmIngreso();
+                froma.Show();
             }
             else
             {
-                MessageBox.Show("usuario o contraseña incorrectas");
+                intentosFallidos++;
+                if (intentosFallidos >= maximoIntentos)
+                {
+                    MessageBox.Show("Has excedido el número máximo de intentos fallidos. El botón de ingreso será desactivado.");
+                    button1.Enabled = false; 
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o contraseña incorrecta");
+                    textBoxPWD.Clear();
+                    textBoxUSR.Clear();
+                }
             }
+
+        }
+        private void textBoxPWD_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         //private void buttonInicio_Click(object sender, EventArgs e)

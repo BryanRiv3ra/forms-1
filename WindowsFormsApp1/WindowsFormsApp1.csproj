@@ -107,5 +107,14 @@
   <ItemGroup>
     <None Include="Resources\descargar %284%29.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descargar %284%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6f84657f-3edb-4a03-b27c-a3e39fd090eb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d45121855efb5fa759a01b8def4ebe31.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

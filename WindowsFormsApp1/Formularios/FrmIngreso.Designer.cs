@@ -36,6 +36,8 @@
             this.numero2 = new System.Windows.Forms.TextBox();
             this.comboBoxFacultades = new System.Windows.Forms.ComboBox();
             this.Resultado = new System.Windows.Forms.Label();
+            this.carreras = new System.Windows.Forms.Button();
+            this.limpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -67,9 +69,9 @@
             // 
             // sumar
             // 
-            this.sumar.Location = new System.Drawing.Point(27, 154);
+            this.sumar.Location = new System.Drawing.Point(27, 156);
             this.sumar.Name = "sumar";
-            this.sumar.Size = new System.Drawing.Size(75, 23);
+            this.sumar.Size = new System.Drawing.Size(95, 44);
             this.sumar.TabIndex = 3;
             this.sumar.Text = "Sumar";
             this.sumar.UseVisualStyleBackColor = true;
@@ -82,6 +84,7 @@
             this.numero1.Name = "numero1";
             this.numero1.Size = new System.Drawing.Size(100, 35);
             this.numero1.TabIndex = 4;
+            this.numero1.TextChanged += new System.EventHandler(this.numero1_TextChanged);
             // 
             // numero2
             // 
@@ -109,11 +112,37 @@
             this.Resultado.Size = new System.Drawing.Size(0, 29);
             this.Resultado.TabIndex = 8;
             // 
+            // carreras
+            // 
+            this.carreras.AutoSize = true;
+            this.carreras.Location = new System.Drawing.Point(298, 46);
+            this.carreras.Name = "carreras";
+            this.carreras.Size = new System.Drawing.Size(112, 38);
+            this.carreras.TabIndex = 9;
+            this.carreras.Text = "Carreras";
+            this.carreras.UseVisualStyleBackColor = true;
+            this.carreras.Click += new System.EventHandler(this.carreras_Click);
+            // 
+            // limpiar
+            // 
+            this.limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.limpiar.Image = global::WindowsFormsApp1.Properties.Resources.d45121855efb5fa759a01b8def4ebe31;
+            this.limpiar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.limpiar.Location = new System.Drawing.Point(12, 245);
+            this.limpiar.Name = "limpiar";
+            this.limpiar.Size = new System.Drawing.Size(169, 98);
+            this.limpiar.TabIndex = 10;
+            this.limpiar.Text = "Limpiar";
+            this.limpiar.UseVisualStyleBackColor = true;
+            this.limpiar.Click += new System.EventHandler(this.limpiar_Click);
+            // 
             // FrmIngreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.limpiar);
+            this.Controls.Add(this.carreras);
             this.Controls.Add(this.Resultado);
             this.Controls.Add(this.comboBoxFacultades);
             this.Controls.Add(this.numero2);
@@ -140,5 +169,7 @@
         private System.Windows.Forms.TextBox numero2;
         private System.Windows.Forms.ComboBox comboBoxFacultades;
         private System.Windows.Forms.Label Resultado;
+        private System.Windows.Forms.Button carreras;
+        private System.Windows.Forms.Button limpiar;
     }
 }
